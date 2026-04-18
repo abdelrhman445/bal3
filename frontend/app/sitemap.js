@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://ballegh.app';
+  const baseUrl = 'https://bal3.vercel.app/';
 
   return [
     {
