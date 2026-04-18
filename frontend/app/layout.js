@@ -11,6 +11,9 @@ export const metadata = {
     locale: 'ar_EG',
     type: 'website',
   },
+  verification: {
+    google: 'YBC_Qlwfy5sAbt3IF2_gt6KjXC6TnqTkSZpXiSfKSAc',
+  },
 };
 
 export default function RootLayout({ children }) {
