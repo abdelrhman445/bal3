@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   // حطينا رابط الباك اند مباشرة هنا بدل المتغير
-  baseURL: 'http://localhost:5000/api', 
+  baseURL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api',
 });
 
 // إضافة الـ Token لأي ريكويست بيتبعت للباك اند
