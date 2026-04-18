@@ -21,6 +21,6 @@ export default function robots() {
         '/.git/'
       ],
     },
-    sitemap: 'https://ballegh.app/sitemap.xml',
+    sitemap: 'https://bal3.vercel.app/sitemap.xml',
   };
 }
