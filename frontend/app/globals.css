@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cairo:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --ink: #0a0a08;
+  --cream: #f5f0e8;
+  --gold: #c9a84c;
+  --gold-light: #e8d5a0;
+  --gold-dim: rgba(201, 168, 76, 0.15);
+  --smoke: #1e1e1a;
+  --smoke-2: #2a2a25;
+  --rust: #b84c36;
+  --mist: rgba(245, 240, 232, 0.06);
+  --border: rgba(201, 168, 76, 0.12);
+  --text-muted: rgba(245, 240, 232, 0.4);
+  --text-mid: rgba(245, 240, 232, 0.65);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { direction: rtl; scroll-behavior: smooth; }
+body { background: var(--ink); color: var(--cream); font-family: 'Cairo', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+::selection { background: var(--gold); color: var(--ink); }
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--gold); }
